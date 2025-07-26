@@ -38,8 +38,6 @@ public class MainActivity extends Activity {
     ViewTools.setLocale(this);
     activityMainBinding = ActivityMainBinding.inflate(this.getLayoutInflater());
     setContentView(activityMainBinding.getRoot());
-    // 检测激活
-    checkActive();
     // 设置设备列表适配器
     deviceListAdapter = new DeviceListAdapter(this);
     activityMainBinding.devicesList.setAdapter(deviceListAdapter);
