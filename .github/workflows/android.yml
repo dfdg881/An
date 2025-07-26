@@ -23,7 +23,7 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build with Gradle
-      run: ./gradlew assembleDebug --stacktrace
+      run: ./gradlew build server
 
 
     # 上传 Release APK（如果有的话）
