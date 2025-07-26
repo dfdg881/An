@@ -8,10 +8,6 @@ on:
 
 jobs:
   build:
-<<<<<<< HEAD
-
-=======
->>>>>>> 4cce4b1 (Adding files)
     runs-on: ubuntu-latest
 
     steps:
@@ -25,10 +21,6 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-<<<<<<< HEAD
-    - name: Build with Gradle
-      run: ./gradlew build
-=======
     
     - name: Build with Gradle
       run: ./gradlew build
@@ -59,4 +51,3 @@ jobs:
           app/build/reports/
           app/build/test-results/
         retention-days: 7
->>>>>>> 4cce4b1 (Adding files)
