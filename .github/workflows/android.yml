@@ -23,24 +23,4 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build with Gradle
-      run: ./gradlew build server
-
-
-    # 上传 Release APK（如果有的话）
-    - name: Upload Release APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-release
-        path: app/build/outputs/apk/release/app-release.apk
-        retention-days: 7
-        
-    # 上传构建报告
-    - name: Upload Build Reports
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: build-reports
-        path: |
-          app/build/reports/
-          app/build/test-results/
-        retention-days: 7
+      run: ./gradlew tasks
